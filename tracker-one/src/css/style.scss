@@ -42,10 +42,10 @@ $primary-color:#f2f2ff;
 
 .wrapper{
     background-color: $secondary-color;
-    height: 5rem;
+
     color: $primary-color;
     font-family: $header-font;
-    padding: 4rem;
+    padding: 4rem 1rem 1.5rem 1rem;
     font-size: $font-size-larger;
     display: flex;
     justify-content: space-between;
@@ -85,7 +85,7 @@ h1:hover{
                 }
               
        }
-       li:hover{
+       li:hover, a:hover{
            border-bottom: 2px solid $color-accent;
            transition: 0.5s all ease-in-out;
            color: $font-hover-color;
@@ -93,4 +93,11 @@ h1:hover{
        }
    }
 
+}
+
+footer{
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 4rem;
+    margin-top: 8rem;
 }

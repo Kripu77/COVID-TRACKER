@@ -14,10 +14,9 @@ body {
 
 .wrapper {
   background-color: #31347a;
-  height: 5rem;
   color: #f2f2ff;
   font-family: monospace;
-  padding: 4rem;
+  padding: 4rem 1rem 1.5rem 1rem;
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,10 +67,17 @@ body {
   text-decoration: none;
 }
 
-.links-container ul li:hover {
+.links-container ul li:hover, .links-container ul a:hover {
   border-bottom: 2px solid #f6ce7a;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
   color: #bcbcc3;
+}
+
+footer {
+  background-color: #31347a;
+  color: #f2f2ff;
+  padding: 4rem;
+  margin-top: 8rem;
 }
 /*# sourceMappingURL=style.css.map */
