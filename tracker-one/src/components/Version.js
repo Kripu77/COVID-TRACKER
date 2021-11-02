@@ -1,11 +1,12 @@
 import React from 'react'
-
+import version from '../images/version.png'
 const Version = () => {
     return (
-        <div>
-            <h1> I am version</h1>
-        </div>
-    )
+      <section className='version'>
+        <h1> Verison beta 1.00.</h1>
+        <img src={version}/>
+      </section>
+    );
 }
 
 export default Version
