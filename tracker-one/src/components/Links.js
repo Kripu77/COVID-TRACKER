@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavContext } from './data/Maincontext';
+//resuable component for links
 const Links = () => {
     const data = useNavContext();
     const { links} = data;
