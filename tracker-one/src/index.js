@@ -1,4 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-ReactDOM.render(<App/>, document.getElementById('root'));
+import { Maincontext } from './components/data/Maincontext';
+
+ReactDOM.render(
+  <Maincontext children={<App />} />,
+
+  document.getElementById("root")
+);

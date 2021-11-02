@@ -8,6 +8,7 @@ import About from './components/About'
 import Resources from './components/Resources'
 import Version from './components/Version'
 import Error from './components/Error'
+import Home from './components/Home'
 const App = () => {
     return (
       <div>
@@ -15,7 +16,7 @@ const App = () => {
           <Header />
           <Switch>
               <Route exact path="/">
-
+<Home/>
 
               </Route>
               <Route path="/about">
