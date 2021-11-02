@@ -35,7 +35,7 @@ $primary-color:#f2f2ff;
 
     color: $primary-color;
     font-family: $header-font;
-    padding: 4rem 1rem 1.5rem 1rem;
+    padding: 4rem 3rem 1.5rem 3rem;
     font-size: $font-size-larger;
     display: flex;
     justify-content: space-between;
@@ -211,10 +211,27 @@ a{
     justify-content: space-around;
     max-width: 2040px;
     margin: 8rem auto 0 auto;
+    padding: 5rem;
+    h1{
+        text-align: justify;
+    }
+     img {
+         max-width: 50vw;
+     }
 }
 
 
+//spinner for loading component
 
+.spinner{
+    text-align: center;
+    img{
+     width: 70vw;
+     height: 50vh;  
+     margin-top: 30vh; 
+        
+    }
+}
 footer{
     background-color: $secondary-color;
     color: $primary-color;

@@ -8,7 +8,7 @@ const About = () => {
     return (
       <section className="about">
         <div>
-          <h1> Designed and Developed By Kripu Khadka @ 2021. </h1>
+          <h1> Covid Records Tracker, Designed and Developed By Kripu Khadka @ 2021. </h1>
           <h2>
             {" "}
             A developer consistently working on projects, sharpening existing

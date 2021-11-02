@@ -9,9 +9,20 @@ import Resources from './components/Resources'
 import Version from './components/Version'
 import Error from './components/Error'
 import Home from './components/Home'
+import { useNavContext } from './components/data/Maincontext'
+import Loading from './components/Loading'
 const App = () => {
+
+    const {loading, error} = useNavContext();
+
+    if(loading){
+        return <Loading/>
+    }
+    if(error){
+        return <Error/>
+    }
     return (
-      <div>
+      <main>
         <Router>
           <Header />
           <Switch>
@@ -34,7 +45,7 @@ const App = () => {
           </Switch>
           <Footer/>
         </Router>
-      </div>
+      </main>
     );
 }
 
