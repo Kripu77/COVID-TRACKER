@@ -26,7 +26,8 @@ export const useFetchCustom = (url) => {
             setIsLoading(false)
 
         })
-        .catch((err)=>console.log(err))
+        .catch((err)=>{console.log(err)
+        setError(true)})
 
     }
 
