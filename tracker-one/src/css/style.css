@@ -92,6 +92,7 @@ body {
   margin-top: 8rem;
   text-align: justify;
   color: #46464b;
+  max-width: 90vw;
 }
 
 .Home img {
