@@ -166,9 +166,13 @@ h1{
 .error{
     display: flex;
     justify-content: space-around;
-    max-width: 2040px;
-    margin-top: 10rem;
+    max-width: 2240px;
+    
     padding: 5rem;
+    margin: 10rem auto 0 auto;
+   h1{
+        text-align: justify;
+   }
     img{
         max-width: 50vw;
     }
@@ -230,7 +234,7 @@ a{
     color: $primary-color;
 }
     .footer-stack{
-        max-width: 30vw;
+        max-width: 40vw;
         
        
 li{
@@ -239,6 +243,7 @@ li{
     }
 
     .footer-links{
+    
         a{
         color: $primary-color;
    
@@ -250,5 +255,6 @@ li{
     }
     .footer-description{
         max-width: 40vw;
+      
     }
 }
