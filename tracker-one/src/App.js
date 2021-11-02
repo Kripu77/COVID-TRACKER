@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Header from './components/Header'
+import "./css/style.css"
 const App = () => {
     return (
         <div>
-            <h1> Sync</h1>
+            <Header/>
         </div>
     )
 }
