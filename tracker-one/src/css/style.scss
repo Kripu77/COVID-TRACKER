@@ -226,10 +226,35 @@ a{
 .spinner{
     text-align: center;
     img{
-     width: 70vw;
+     max-width: 50vw;
      height: 50vh;  
      margin-top: 30vh; 
         
+    }
+}
+
+//display page
+
+.display-table{
+    text-align: center;
+    padding: 2rem;
+    max-width: 2040px;
+    margin-left: auto;
+    margin-right: auto;
+    div{
+        h2{
+            color: rgb(92, 88, 88);
+        }
+    }
+    h1{
+       font-size: $font-size-secondary;
+    }
+    .parent-wrapper{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        padding: 3rem;
+        background-color: $color-accent;
     }
 }
 footer{

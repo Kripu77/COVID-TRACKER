@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export const useFetchCustom = (url) => {
+const useFetchCustom = (url) => {
 
     const[ apiData, setApiData] = useState([]);
     const [error, setError] = useState(false)
@@ -16,13 +16,17 @@ export const useFetchCustom = (url) => {
                 return resp.json();
             }
             else{
-                setError(true)
                 setIsLoading(false);
+                setError(true)
+                
             }
 
         })
         .then((data)=>{
+            console.log(data)
+         
             setApiData(data)
+               
             setIsLoading(false)
             // console.log(data)
 
@@ -34,7 +38,7 @@ export const useFetchCustom = (url) => {
 
 useEffect(()=>{
     fetchFn();
-}, [])
+}, [url])
 
 return {
     apiData, error, loading
@@ -42,4 +46,4 @@ return {
     
 }
 
-
+export default useFetchCustom;

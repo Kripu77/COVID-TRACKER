@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect} from 'react'
 import { data } from './links';
-import { useFetchCustom } from './useFetchCustom';
+import useFetchCustom  from './useFetchCustom';
 
 export const navContext = React.createContext();
 const url = "https://corona.lmao.ninja/v3/covid-19/all";

@@ -224,9 +224,37 @@ a {
 }
 
 .spinner img {
-  width: 70vw;
+  max-width: 50vw;
   height: 50vh;
   margin-top: 30vh;
+}
+
+.display-table {
+  text-align: center;
+  padding: 2rem;
+  max-width: 2040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display-table div h2 {
+  color: #5c5858;
+}
+
+.display-table h1 {
+  font-size: 1.5rem;
+}
+
+.display-table .parent-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+  padding: 3rem;
+  background-color: #f6ce7a;
 }
 
 footer {
