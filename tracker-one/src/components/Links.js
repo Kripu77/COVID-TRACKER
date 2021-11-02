@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavContext } from './data/Maincontext';
 const Links = () => {
     const data = useNavContext();
-    const { links } = data;
+    const { links} = data;
     console.log(links);
     
     return (

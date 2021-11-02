@@ -24,6 +24,7 @@ export const useFetchCustom = (url) => {
         .then((data)=>{
             setApiData(data)
             setIsLoading(false)
+            // console.log(data)
 
         })
         .catch((err)=>{console.log(err)
@@ -33,7 +34,7 @@ export const useFetchCustom = (url) => {
 
 useEffect(()=>{
     fetchFn();
-}, [apiData])
+}, [])
 
 return {
     apiData, error, loading
