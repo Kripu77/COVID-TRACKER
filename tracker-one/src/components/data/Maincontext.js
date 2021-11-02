@@ -17,6 +17,6 @@ export const Maincontext = ({children}) => {
 //setup custom hook
 
 export const useNavContext = ()=>{
-    return useContext(Maincontext)
+    return useContext(navContext)
 }
 
