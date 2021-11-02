@@ -37,7 +37,13 @@ const useFetchCustom = (url) => {
     }
 
 useEffect(()=>{
-    fetchFn();
+ const fetchData= setInterval(() => {
+     fetchFn();
+ }, 5000);
+ 
+ //clean up fn
+
+ return ()=>{clearInterval(fetchData)}
 }, [url])
 
 return {

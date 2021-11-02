@@ -49,14 +49,15 @@ const Display = () => {
                   <h1> Deaths:</h1>
                   <h2> {deaths}</h2>
                 </div>
-          {/* <div>
+          <div>
 
-              <h1> Today's Death:</h1>
+              <h1> Deaths today:</h1>
               <h2> {todayDeaths}</h2>
-          </div> */}
+          </div>
               </div>
             );
-          })}{" "}
+          })}{" "}'
+          <h3>Source: Lmao Ninja. Updating every 5seconds.</h3>
         </div>
       </section>
     );

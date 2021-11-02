@@ -1,6 +1,7 @@
 import React from 'react'
 import data from "../images/data.png"
 import Display from './Display';
+import ImageGrid from './ImageGrid';
 const Home = () => {
     return (
       <main>
@@ -39,6 +40,7 @@ const Home = () => {
             Post-Pandemic World{" "}
           </h1>
         </section>
+        <ImageGrid/>
       </main>
     );
 }

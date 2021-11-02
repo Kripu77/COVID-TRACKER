@@ -11,6 +11,7 @@ import Error from './components/Error'
 import Home from './components/Home'
 import { useNavContext } from './components/data/Maincontext'
 import Loading from './components/Loading'
+import FixedUtility from './components/FixedUtility'
 const App = () => {
 
     const {loading, error} = useNavContext();
@@ -25,6 +26,7 @@ const App = () => {
       <main>
         <Router>
           <Header />
+          <FixedUtility/>
           <Switch>
               <Route exact path="/">
 <Home/>
