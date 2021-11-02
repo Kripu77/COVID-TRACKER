@@ -3,6 +3,7 @@ $primary-color:#f2f2ff;
         $color-accent:#f6ce7a;
             $font-color-main:black;
                 $font-color-secondary: white;
+                $font-hover-color: #bcbcc3;
                     $font-size-primary: 1rem;
                         $font-size-secondary:1.5rem;
                             $font-size-tertiary:0.5rem;
@@ -51,6 +52,16 @@ $primary-color:#f2f2ff;
     flex-wrap: wrap;
 h1{
     cursor: pointer;
+    transition: 0.6s all ease-in-out;
+    span{
+        color: #ff237e;
+    }
+}
+h1:hover{
+ color: $font-hover-color;
+ transition: 0.6s all ease-in-out;
+ 
+
 }
    
 }
@@ -64,10 +75,21 @@ h1{
         list-style: none;
         border-bottom: 1px solid transparent;
         cursor: pointer;
+                font-weight: 400;
+                color: white;
+
+           
+                 a{
+                       color: white;
+                         text-decoration: none;
+                }
+              
        }
        li:hover{
            border-bottom: 2px solid $color-accent;
            transition: 0.5s all ease-in-out;
+           color: $font-hover-color;
+   
        }
    }
 

@@ -1,27 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
       <header>
         <nav>
-          <main className='wrapper'>
+          <main className="wrapper">
             <section className="nav-container">
-              <h1>Global Tracker</h1>
+              <h1>
+                Global <span>Tracker </span>
+              </h1>
             </section>
             <section className="links-container">
               <ul>
                 <li>
-                  Home
+                  <Link to="/"> Home</Link>
+                </li>
+
+                <li>
+                  <Link to="/About"> About</Link>
                 </li>
                 <li>
-                About
+                  <Link to="/Resources">Resources</Link>
                 </li>
                 <li>
-                 Resources
-                </li>
-                <li>
-  Version
-               
+                  {" "}
+                  <Link to="/Version">Version</Link>
                 </li>
               </ul>
             </section>
