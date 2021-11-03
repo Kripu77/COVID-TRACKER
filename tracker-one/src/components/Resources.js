@@ -1,6 +1,14 @@
 import React from 'react'
 import resource from "../images/resource.png"
+import { Helmet } from 'react-helmet';
 const Resources = () => {
+  <Helmet>
+
+    <meta charSet="utf-8" />
+    <title>Resources</title>
+    <link rel="canonical" href="http://kripukhadka.com" />
+
+  </Helmet>
     return (
       <section className="resource">
         <div>

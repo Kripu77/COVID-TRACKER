@@ -3,8 +3,15 @@ import about from '../images/about.png'
 import data from "./data/links.js"
 import { useNavContext } from './data/Maincontext'
 import Links from './Links'
+import { Helmet } from 'react-helmet'
 const About = () => {
+<Helmet>
 
+    <meta charSet="utf-8" />
+    <title>About us </title>
+    <link rel="canonical" href="http://kripukhadka.com" />
+
+</Helmet>
     return (
       <section className="about">
         <div>

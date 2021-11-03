@@ -9,7 +9,7 @@ body {
   height: 100vh;
   width: 100%;
   font-family: cursive;
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #46464b;
   text-align: justify;
 }
@@ -19,7 +19,7 @@ body {
   color: #f2f2ff;
   font-family: monospace;
   padding: 4rem 3rem 1.5rem 3rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +140,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 4rem;
 }
 
@@ -189,12 +189,16 @@ body {
 
 .resource div {
   margin-top: 8rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .resource div a {
   color: #46464b;
+}
+
+.resource img {
+  max-width: 50vw;
 }
 
 a {
@@ -226,7 +230,7 @@ a {
 }
 
 .spinner img {
-  max-width: 50vw;
+  max-width: 80vw;
   height: 50vh;
   margin-top: 30vh;
 }
@@ -248,7 +252,7 @@ a {
 }
 
 .display-table h1 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .display-table .parent-wrapper {
@@ -320,7 +324,7 @@ footer {
   color: #f2f2ff;
   padding: 4rem;
   margin-top: 8rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-align: left;
 }
 

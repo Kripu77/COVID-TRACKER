@@ -6,11 +6,11 @@ $primary-color:#f2f2ff;
                 $font-color-secondary: white;
                 $font-hover-color: #bcbcc3;
                 $font-color-accent-hover: #1a1a1b;
-                    $font-size-primary: 1rem;
-                        $font-size-secondary:1.5rem;
-                            $font-size-tertiary:1.3rem;
-                            $font-size-larger:2rem;
-                            $fon-size-XL:3rem;
+                    $font-size-primary: 0.7rem;
+                        $font-size-secondary:1.1rem;
+                            $font-size-tertiary:1rem;
+                            $font-size-larger:1.5rem;
+                            $fon-size-XL:2.0rem;
                             $main-font:cursive;
                             $header-font:monospace;
 
@@ -201,6 +201,9 @@ font-size: $font-size-secondary;
  color: $font-color-accent;
     } 
 }
+img{
+    max-width: 50vw;
+}
 }
 //global styling for a tags
 a{
@@ -230,7 +233,7 @@ a{
 .spinner{
     text-align: center;
     img{
-     max-width: 50vw;
+     max-width: 80vw;
      height: 50vh;  
      margin-top: 30vh; 
         

@@ -2,7 +2,13 @@ import React from 'react'
 import data from "../images/data.png"
 import Display from './Display';
 import ImageGrid from './ImageGrid';
+import {Helmet} from "react-helmet";
 const Home = () => {
+  <Helmet>
+    <meta charSet="utf-8" />
+    <title>Home Page</title>
+    <link rel="canonical" href="http://kripukhadka.com" />
+  </Helmet>;
     return (
       <main>
         <section className="Home">
