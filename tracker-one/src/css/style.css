@@ -69,7 +69,7 @@ body {
   text-decoration: none;
 }
 
-.links-container ul li:hover, .links-container ul a:hover {
+.links-container ul li:hover, .links-container ul a:hover, .links-container ul li.active, .links-container ul a.active {
   border-bottom: 2px solid #f6ce7a;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
@@ -361,5 +361,75 @@ footer .footer-links a:hover {
 
 footer .footer-description {
   max-width: 40vw;
+}
+
+@media all and (max-width: 880px) {
+  body {
+    font-family: monospace;
+    font-size: 0.5rem;
+  }
+  .wrapper {
+    text-align: center;
+    display: block;
+    padding: 1rem;
+  }
+  img {
+    height: 30vh;
+    max-width: 60vw !important;
+    margin-top: 3rem;
+  }
+  .Home, .links-container {
+    padding: 1rem;
+    font-family: monospace;
+    display: block;
+  }
+  .Home h1, .links-container h1 {
+    margin-top: 0;
+  }
+  .Home ul, .links-container ul {
+    display: block;
+  }
+  .Home ul li, .Home ul a, .links-container ul li, .links-container ul a {
+    border-bottom: none;
+  }
+  .parent-wrapper, .display-table {
+    display: block !important;
+    padding: 0;
+    width: 80vw;
+  }
+  .parent-wrapper div, .display-table div {
+    display: block;
+  }
+  .image-grid {
+    padding: 0;
+    width: 90vw;
+  }
+  .fixed-menu {
+    position: fixed;
+    right: 10 !important;
+  }
+  .mapped-data {
+    max-width: 900vw !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 !important;
+  }
+  .mapped-data .data-item {
+    margin-top: 0;
+  }
+  footer main {
+    display: block;
+  }
+  footer section {
+    margin-top: 2rem;
+  }
+  .about {
+    display: block;
+  }
+  .about div h1, .about div h2, .about div img {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin-left: 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
