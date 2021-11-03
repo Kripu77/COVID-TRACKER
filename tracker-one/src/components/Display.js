@@ -46,7 +46,7 @@ const Display = () => {
                   <h2> {critical}</h2>
                 </div>
                 <div className='item-six'>
-                  <h1> Deaths:</h1>
+                  <h1> Total Number of Deaths:</h1>
                   <h2> {deaths}</h2>
                 </div>
           <div>

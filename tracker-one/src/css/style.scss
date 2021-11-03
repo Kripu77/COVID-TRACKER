@@ -36,7 +36,7 @@ $primary-color:#f2f2ff;
 
     color: $primary-color;
     font-family: $header-font;
-    padding: 4rem 3rem 1.5rem 3rem;
+    padding: 2.5rem 3rem 1.5rem 3rem;
     font-size: $font-size-larger;
     display: flex;
     justify-content: space-between;
@@ -98,14 +98,14 @@ h1:hover{
     font-family: cursive;
 
     h1{
-        margin-top: 8rem;
+        margin-top: 4rem;
         text-align: justify;
         color: #46464b;
-        max-width: 95vw;
+        
         
     }
     img{
-        max-width: 50vw;
+        max-width: 40vw;
         margin-left: 3rem;
     }
 }
@@ -133,7 +133,7 @@ h1{
  }
 
  img{
-       max-width: 50vw;
+       max-width: 40vw;
        margin-left: 3rem;
  }
 }
@@ -143,6 +143,8 @@ h1{
 .mapped-data{
     display: flex;
     justify-content:space-around;
+    max-width: 15vw;
+   
     
 
 }
@@ -151,6 +153,7 @@ h1{
     flex: 1;
     font-size: $fon-size-XL;
          margin-top: 4rem;
+          max-width: 15vw;
    a{
        color: $font-color-accent;
        cursor: pointer;
@@ -178,7 +181,7 @@ h1{
        
    }
     img{
-        max-width: 50vw;
+        max-width: 40vw;
     }
 }
 
@@ -202,7 +205,7 @@ font-size: $font-size-secondary;
     } 
 }
 img{
-    max-width: 50vw;
+    max-width: 40vw;
 }
 }
 //global styling for a tags
@@ -223,7 +226,7 @@ a{
         text-align: justify;
     }
      img {
-         max-width: 50vw;
+         max-width: 40vw;
      }
 }
 
@@ -326,15 +329,15 @@ z-index: 22;
 footer{
     background-color: $secondary-color;
     color: $primary-color;
-    padding: 4rem;
-    margin-top: 8rem;
-    font-size: $font-size-secondary;
+    padding: 2rem 4rem 4rem 4rem;
+    margin-top: 10rem;
+    font-size: $font-size-primary;
        text-align:left;
    main{
  display: flex;
  justify-content: space-around;
- max-width: 2140px;
- margin: 2rem auto 0 auto;
+ max-width: 1940px;
+ margin:0 auto 0 auto;
 
 
    }
