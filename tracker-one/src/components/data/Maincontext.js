@@ -10,13 +10,20 @@ export const Maincontext = ({children}) => {
 
     const [links, setLinks] = useState([]);
     const{loading, error, apiData} = useFetchCustom(url);
+    const [show, setShow] = useState(false);
     
 useEffect(()=>{
     setLinks(data)
 },[])
+
+//fn to toggle the dynamic side bar
+
+const toggleSideBar=()=>{
+    setShow(!show)
+}
     return (
         <div>
-            <navContext.Provider value={{links, loading, error, apiData}}>
+            <navContext.Provider value={{links, loading, error, apiData, toggleSideBar, show}}>
                 {children}
             </navContext.Provider>
         </div>
