@@ -23,7 +23,7 @@ const useFetchCustom = (url) => {
 
         })
         .then((data)=>{
-            console.log(data)
+   
          
             setApiData(data)
                
@@ -43,7 +43,7 @@ useEffect(()=>{
  
  //clean up fn
 
- return ()=>{clearInterval(fetchData)}
+ return ()=>{clearInterval(fetchData())}
 }, [url])
 
 return {

@@ -4,7 +4,7 @@ import { useNavContext } from './data/Maincontext';
 const Links = () => {
     const data = useNavContext();
     const { links} = data;
-    console.log(links);
+
     
     return (
       <section className="mapped-data">

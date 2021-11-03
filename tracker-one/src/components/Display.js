@@ -10,7 +10,7 @@ const Display = () => {
         <h1> Cases Records:</h1>
         <div>
           {fnlData.map((data) => {
-            console.log(data);
+    
 
             const {
               active,

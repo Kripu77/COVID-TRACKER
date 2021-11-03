@@ -1,4 +1,6 @@
 import React from 'react'
+import LazyLoad from "react-lazyload";
+import {motion} from "framer-motion";
 
 const ImageGrid = () => {
     return (
@@ -16,14 +18,32 @@ const ImageGrid = () => {
           Below are some basic protective measures that have been provided by
           the World Health Organization that all would be wise to follow.
         </h1>
-        <section className="container-two">
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.1_WashHands.jpg" />
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.2_SocialDistance-1.jpg" />
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.3_AvoidTouching.jpg" />
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.4_RespiratoryHygeine.jpg" />
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.5_SeekCare.jpg" />
-          <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.6_StayInformed.jpg" />
-        </section>
+        <LazyLoad height={1000}>
+          <motion.div
+            initital={{
+              y: -10,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1.3,
+            }}
+            tranistion={{
+              type: "spring",
+              stiffness: 16,
+              duration: 15,
+            }}
+          >
+            <section className="container-two">
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.1_WashHands.jpg" />
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.2_SocialDistance-1.jpg" />
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.3_AvoidTouching.jpg" />
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.4_RespiratoryHygeine.jpg" />
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.5_SeekCare.jpg" />
+              <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_1.6_StayInformed.jpg" />
+            </section>
+          </motion.div>
+        </LazyLoad>
         <h1>
           {" "}
           While protective measures like social distancing are necessary to keep
@@ -35,6 +55,22 @@ const ImageGrid = () => {
           behaviors that contribute to general physical and mental health. These
           include:
         </h1>
+        <LazyLoad height={1000}>
+          <motion.div
+            initital={{
+              y: -10,
+              opacity: 0,
+            }}
+            animate={{
+              y: 0,
+              opacity: 1.3,
+            }}
+            tranistion={{
+              type: "spring",
+              stiffness: 16,
+              duration: 15,
+            }}
+          >
         <section className="container-one">
           <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_2.1_Sleep.jpg" />
           <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_2.2_Hydration.jpg" />
@@ -43,6 +79,9 @@ const ImageGrid = () => {
           <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_2.5_ManageAnxiety.jpg" />
           <img src="https://www.smokefreeworld.org/wp-content/uploads/2020/03/COVID_2.6_MaintainConnections.jpg" />
         </section>
+        
+        </motion.div>
+        </LazyLoad>
         <h1>
           {" "}
           COVID-19 is primarily a respiratory illness that has the potential to
