@@ -62,7 +62,7 @@ h1:hover{
    
 }
 
-.links-container{
+.links-container, .links-container-show{
    ul{
        display: flex;
        li{
@@ -445,7 +445,9 @@ li{
        
     }
     .links-container-show{
+    
         ul{
+                display: block !important;
             position: fixed;
             top: 0;
             left: 0;
