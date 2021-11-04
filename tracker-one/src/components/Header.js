@@ -22,24 +22,34 @@ const Header = () => {
             <section
               className={show ? "links-container-show" : "links-container"}
             >
-              
               <ul>
                 <button className="toggle-btn" onClick={() => toggleSideBar()}>
                   <FaCross />{" "}
                 </button>
                 <li>
-                  <Link to="/"> Home</Link>
+                  <Link to="/" onClick={() => toggleSideBar()}>
+                    {" "}
+                    Home
+                  </Link>
                 </li>
 
                 <li>
-                  <Link to="/About"> About</Link>
+                  <Link to="/About" onClick={() => toggleSideBar()}>
+                    {" "}
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/Resources">Resources</Link>
+                  <Link to="/Resources" onClick={() => toggleSideBar()}>
+                    {" "}
+                    Resources
+                  </Link>
                 </li>
                 <li>
                   {" "}
-                  <Link to="/Version">Version</Link>
+                  <Link to="/Version" onClick={() => toggleSideBar()}>
+                    Version
+                  </Link>
                 </li>
               </ul>
             </section>
